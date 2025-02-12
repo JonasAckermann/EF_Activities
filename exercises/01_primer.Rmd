@@ -1,0 +1,69 @@
+---
+title: "01_primer"
+author: Jonas Ackermann
+output: html_document
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+```{r}
+char <- "I am a person"
+print(char)
+```   
+
+```{r}
+log(1)
+log(0)
+log(exp(1))
+log(-5)
+-log(5)
+log(1/5)
+```
+```{r}
+?log
+?log10
+```
+
+```{r}
+a <- 5
+b <- 13
+c_sq <- (a*a) + (b*b)
+c <- sqrt(c_sq)
+print(c)
+
+pyth <- function(a, b) {
+  c_sq <- (a*a) + (b*b)
+  sqrt(c_sq)
+  # Do not need to return manually
+  #c <- sqrt(c_sq)
+ #return(c)
+}
+pyth(a = 5, b = 13)
+```
+
+## Sequences
+
+```{r}
+x1 = 1:10
+```
+```{r}
+x2 = 1:12
+x2[0]
+x2[2]
+```
+```{r}
+x3 = seq(from = 1, to = 10, by = 2)
+x3
+```
+```{r}
+x4 = seq(from = 1, by = 2, length.out = 19)
+length(x4)
+rep(1, 10)
+```
+```{r}
+seq(from = -6, to = 6, by = 2)
+x <- seq(from = -4.8, to = -3.43, length.out = 8)
+length(x)
+```
+
