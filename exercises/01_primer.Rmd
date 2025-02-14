@@ -66,4 +66,13 @@ seq(from = -6, to = 6, by = 2)
 x <- seq(from = -4.8, to = -3.43, length.out = 8)
 length(x)
 ```
-
+```{r}
+x <- data.frame(hello = 1:10)
+y <- cbind(x, world = 2:11)
+print(y)
+```
+```{r}
+pia <- c("Charlotte", "Mike", "Dad", "MV")
+why <- c("da best", "good guy", "always tried", "hella smart")
+data.frame(x = pia, y = why)
+```
