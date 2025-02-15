@@ -76,3 +76,14 @@ pia <- c("Charlotte", "Mike", "Dad", "MV")
 why <- c("da best", "good guy", "always tried", "hella smart")
 data.frame(x = pia, y = why)
 ```
+
+```{r}
+getwd()
+dat = read.table("../data/Lab1_frogs.txt",header=TRUE)
+write.table(dat,"my_frogs.csv",row.names=FALSE,sep=",")     ## save as CSV
+```
+```{r}
+?read.table
+met <- read.table("../data/met_hourly.csv", row.names = NULL) # force not using row names
+write.table(x,"exes.csv",row.names=FALSE,sep=",")
+```
